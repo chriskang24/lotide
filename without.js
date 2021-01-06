@@ -35,7 +35,7 @@ function assertArraysEqual(arrayOne, arrayTwo) {
 };
 
 
-function without(source, itemsToRemove) {
+/*function without(source, itemsToRemove) {
 
   let newSource = source.slice();
 
@@ -53,10 +53,28 @@ function without(source, itemsToRemove) {
   }
 
   return newSource;
+};*/
+
+function without (source, itemsToRemove) {
+  if (eqArrays(source, itemsToRemove));
+
+  let newArray = [];
+  
+  for (let i = 0; i < source.length; i++) {
+
+    // console.log(newArray)
+
+    if (!itemsToRemove.includes(source[i])) {
+      newArray.push(source[i]);
+
+      console.log(newArray)
+    }
+
+  }
+  return newArray;
 };
 
-
-without([1, 2, 3, 3, 3, 3], [1, 3])
+without([1, 2, 3, 3, 3, 3, 4, 5], [1, 3, 4])
 
 
 const words = ["hello", "world", "lighthouse"];
