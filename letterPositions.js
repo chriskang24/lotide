@@ -27,8 +27,7 @@ function eqArrays(firstComparison, secondComparison) {
 
 
 function letterPositions(sentence) {
-
-
+  
   const results = {};
 
   for (let i = 0; i < sentence.length; i++) {
