@@ -11,7 +11,7 @@ function middle(givenArray) {
 
   } else if (givenArray.length % 2 === 1) {
 
-    return middleArray = givenArray[Math.floor(givenArray.length / 2)];
+    return middleArray = [givenArray[Math.floor(givenArray.length / 2)]];
 
   } else if (givenArray.length % 2 === 0) {
 
@@ -23,4 +23,3 @@ function middle(givenArray) {
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [ 3, 4 ]);
 
 module.exports = middle;
-
